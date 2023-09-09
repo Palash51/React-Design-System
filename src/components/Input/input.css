@@ -1,0 +1,29 @@
+.input {
+    display: block;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.small {
+    height: 20px;
+    font-size: 8px;
+}
+
+.medium {
+    height: 30px;
+    font-size: 12px;
+}
+
+.large {
+    height: 60px;
+    font-size: 24px;
+}

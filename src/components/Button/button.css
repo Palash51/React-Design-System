@@ -1,0 +1,39 @@
+
+.button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.primary {
+    background-color: #007bff;  /* Blue */
+}
+
+.secondary {
+    background-color: #6c757d;  /* Grey */
+}
+
+.success {
+    background-color: #28a745;  /* Green */
+}
+
+.danger {
+    background-color: #dc3545;  /* Red */
+}
+
+.warning {
+    background-color: #ffc107;  /* Yellow */
+}
+
+.info {
+    background-color: #17a2b8;  /* Cyan */
+}
+
