@@ -1,16 +1,29 @@
 import React from "react";
 import "./input.css";
 
-interface IProps {
+export interface InputProps {
     size: "small" | "medium" | "large";
-    placeholder: string;
+    placeholder?: string;
+    defaultValue?: string;
+    value?: string;
+    icon?: string;
+    required?: boolean;
+    autoFocus?: boolean;
+    onClear?: (e: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) => void;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onClick?: () => void;
 }
 
-const Input = (props: IProps) => {
-    const { size = "medium", placeholder, ...rest } = props;
+const Input = (props: InputProps) => {
+    const { size = "medium", placeholder, onChange, onClear, onClick, ...rest } = props;
     return (
-        <input className={`input ${size}`} {...rest} placeholder={placeholder} />
+        <input 
+            className={`input ${size}`}
+            placeholder={placeholder} 
+            onChange={onChange}
+            onClick={onClick}
+            {...rest} 
+            />
     );
 }
 

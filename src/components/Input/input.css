@@ -27,3 +27,11 @@
     height: 60px;
     font-size: 24px;
 }
+
+.Controlled__input {
+    display: flex;
+}
+
+.Controlled__input-item {
+    margin-right: 8px;
+}

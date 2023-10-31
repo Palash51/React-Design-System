@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "./button";
+import Button, { ButtonProps } from "./button";
 
 export default {
-    title: "Form/Button",
+    title: "Components/Button",
     component: Button,
 };
 
@@ -12,3 +12,10 @@ export const Success = () => <Button variant="success">Success</Button>;
 export const Danger = () => <Button variant="danger">Danger</Button>;
 export const Warning = () => <Button variant="warning">Warning</Button>;
 export const Info = () => <Button variant="info">Info</Button>;
+
+
+const Template: React.FC<ButtonProps> = (args) => <Button {...args} />;
+
+export const PrimaryA: React.FC<ButtonProps> = (args) => (
+  <Template {...args} />
+);
